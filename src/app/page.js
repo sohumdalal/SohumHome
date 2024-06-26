@@ -1,11 +1,12 @@
 import styles from "./page.module.css";
+import Header from "./Header";
+import BottomContainer from "./BottomContainer";
 
 export default function Home() {
   return (
-    <div className={styles.main}>
-      <div className={styles.description}>
-    </div>
-
-    </div>
+    <main className={styles.main}>
+      <Header />
+      <BottomContainer />
+    </main>
   );
 }
