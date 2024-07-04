@@ -9,7 +9,7 @@ html, body {
 
 
 .OuterTitle{
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -22,6 +22,7 @@ html, body {
 #titleBox {
   display: flex;
   align-items: baseline;
+  font-size: 2rem; /* Adjust as needed */
 }
 
 h1, h2 {
@@ -34,8 +35,8 @@ h1 {
 }
 
 .contentContainer {
+  margin-top: 50px; /* Add margin top to list */
   display: flex;
-  border: 5px solid blue;
   height: 78%;
   width: 60%;
 }
@@ -43,19 +44,24 @@ h1 {
 .bio {
   width: 60%;
   text-align: left;
+  width: 100%; /* Ensure paragraph takes full width */
+  
 }
 
 .bio p {
   margin: 0 0 10px 0;
+  font-size: 1.5rem; /* Adjust as needed */
 }
 
 .bio ul {
   list-style: none;
   padding: 0;
+  margin-top: 50px; /* Add margin top to list */
 }
 
 .bio ul li {
-  margin: 5px 0;
+  margin: 15px 0;
+  font-size: 1.3rem; /* Adjust as needed */
 }
 
 .bio ul li a {
