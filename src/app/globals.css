@@ -22,5 +22,14 @@ html, body {
 
 #titleBox {
   display: flex;
-  align-items: baseline; /* Align the baseline of the text elements */
+  align-items: baseline;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-right: 5px;
 }
