@@ -4,7 +4,8 @@ const Header = () => {
   return (
     <div class="OuterTitle">
     <div id="titleBox">
-      <h1>Sohum Dalal. </h1><h2>engineer + craftsman</h2>
+      <h1>Sohum Dalal. </h1>
+      <h2>engineer + craftsman</h2>
     </div>
   </div>
   )
