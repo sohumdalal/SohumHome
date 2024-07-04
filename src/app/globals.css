@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+
 html, body {
   margin: 0;
   padding: 0;
@@ -5,12 +8,19 @@ html, body {
   overflow: hidden; /* Prevent scrollbars */
 }
 
-#titleBox {
-  border: 10px solid purple;
+
+.OuterTitle{
+  border: 5px solid blue;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 60%;
-  height: 20%;
-} 
+  justify-content: flex-end;
+  align-items: flex-start; 
+  height: 22%;
+  width: 60%; 
+  font-family: 'Manrope', sans-serif; 
+}
 
+#titleBox {
+  display: flex;
+  align-items: baseline; /* Align the baseline of the text elements */
+}
