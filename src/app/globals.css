@@ -68,6 +68,18 @@ h1 {
   text-decoration: none;
 }
 
-.bio ul li a:hover {
-  text-decoration: underline;
+.bio ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Position the underline */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Underline height */
+  background-color: #0070f3; /* Underline color */
+  transform: scaleX(0); /* Initially scale to zero width */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.bio ul li a:hover::after {
+  transform: scaleX(1); /* Scale to full width on hover */
 }
