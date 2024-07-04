@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <div>
-        <h1>Hello, I'm Sohum</h1>
+        <h1>Sohum Dalal. engineer + craftsman</h1>
     </div>
   )
 }
