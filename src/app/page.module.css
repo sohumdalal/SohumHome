@@ -1,7 +1,7 @@
 
 .main {
   background-color: #E1D8D5;
-  border: 10px solid red;
+  border: 5px solid red;
   height: 100vh;
   width: 100vw;
   box-sizing: border-box; /* Include border within the element's width and height */
@@ -9,4 +9,3 @@
   flex-direction: column;
   align-items: center;
 }
-

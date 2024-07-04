@@ -4,3 +4,13 @@ html, body {
   height: 100%;
   overflow: hidden; /* Prevent scrollbars */
 }
+
+#titleBox {
+  border: 10px solid purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 20%;
+} 
+
