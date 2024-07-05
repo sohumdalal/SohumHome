@@ -19,9 +19,6 @@ export default function RootLayout({ children }) {
 todo:
 
 do a dark mode
-
-
-add spacing throughout + kearning
 add the shutter rotater
 fix media quries for mobile
 

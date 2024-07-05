@@ -40,7 +40,7 @@ h1 {
 
 .contentContainer {
   /* border: 5px solid blue; */
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   height: 78%;
@@ -56,7 +56,7 @@ h1 {
 .bio ul {
   list-style: none;
   padding: 0;
-  margin-top: 50px; 
+  margin-top: 40px; 
 }
 
 .bio ul li {
@@ -79,6 +79,10 @@ h1 {
 .bio ul li a:hover,
 .bio ul li a:active {
   color: black;
+}
+
+#infoParagraph {
+margin-top: 20px;
 }
 
 .colophon {
