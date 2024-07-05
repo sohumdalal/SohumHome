@@ -6,7 +6,7 @@ const ContentContainer = () => {
       <div className="bio">
         <p id = "helloBlurb">Hello! Thanks for stopping by.</p>
         <p id = "infoParagraph">
-          I’m Sohum. I’m a software engineer and craftsman. I appreciate technology systems that are well-organized, functional first, and modular to enable future innovation. Outside of a development environment, you can find me applying the same principles to other pursuits, namely baking bread and (coming soon) woodworking. While I continue to build out my website here, you can learn more about me and my work at the links below:
+          I’m Sohum. I’m a software engineer and craftsman. I appreciate technology systems that are well-organized, functional first, and modular to enable future innovation. Outside of a development environment, you can find me applying the same principles to other pursuits, namely baking bread. You can learn more about me and my work at the links below:
         </p>
         <ul>
           <li><a href="https://www.linkedin.com/in/sohum-dalal-985076a6/" target="_blank"><span>LinkedIn</span>↗</a></li>
@@ -18,7 +18,7 @@ const ContentContainer = () => {
           <li><a href="https://www.pinterest.com/dsohum/" target="_blank"><span>Pinterest</span>↗</a></li>
         </ul>
       </div>
-      <div class="colophon">
+      <div className="colophon">
         <p>Created by Sohum Dalal with Next.js. 2024</p>
       </div>
     </div>

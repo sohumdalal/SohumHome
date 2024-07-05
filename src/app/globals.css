@@ -92,3 +92,53 @@ margin-top: 20px;
   color: gray;
   font-weight: 200;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.wordsToFlip{
+    display: inline-block;
+    overflow: hidden;
+    font-size: 2rem;
+    font-weight: 200;
+    height: 3rem; /* Set a fixed height to limit the visible area */
+}
+.wordsToFlip span{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    animation: spin_words 6s infinite;
+    animation-fill-mode: both; /* Keeps the final animation state */
+    position: relative;
+    top: 0;
+}
+
+
+@keyframes spin_words {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  10%, 90% {
+      transform: translateY(-100%);
+  }
+  20%, 80% {
+      transform: translateY(-200%);
+  }
+  30%, 70% {
+      transform: translateY(-300%);
+  }
+  40%, 60% {
+      transform: translateY(-400%);
+  }
+  50% {
+      transform: translateY(-500%);
+  }
+}
