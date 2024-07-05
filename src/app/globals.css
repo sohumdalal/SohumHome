@@ -1,45 +1,13 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   overflow: hidden;
 }
 
-
-.OuterTitle{
-  /* border: 5px solid blue; */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start; 
-  height: 22%;
-  width: 45%;
-}
-
-#titleBox {
-  display: flex;
-  align-items: baseline;
-  font-size: 2rem;
-}
-
-h1, h2 {
-  margin: 0;
-  padding: 0;
-  letter-spacing: 2px; /* Adjust as needed */
-}
-
-h1 {
-  margin-right: 5px;
-  font-weight: 300;
-}
-
-#smallerTitle {
-  font-size: 2rem;
-  font-weight: 200;
-}
-
 .contentContainer {
-  /* border: 5px solid blue; */
+  border: 5px solid blue;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -50,18 +18,18 @@ h1 {
 
 .bio p {
   margin: 0 0 10px 0;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
 }
 
 .bio ul {
   list-style: none;
   padding: 0;
-  margin-top: 40px; 
+  margin-top: 40px;
 }
 
 .bio ul li {
   margin: 15px 0;
-  font-size: 1.3rem; 
+  font-size: 1.3rem;
 }
 
 .bio ul li a {
@@ -74,7 +42,7 @@ h1 {
   text-decoration: underline;
 }
 
-.bio ul li a:link, 
+.bio ul li a:link,
 .bio ul li a:visited,
 .bio ul li a:hover,
 .bio ul li a:active {
@@ -82,7 +50,7 @@ h1 {
 }
 
 #infoParagraph {
-margin-top: 20px;
+  margin-top: 20px;
 }
 
 .colophon {
@@ -93,46 +61,72 @@ margin-top: 20px;
   font-weight: 200;
 }
 
-.wordsToFlip{
-    display: inline-block;
-    overflow: hidden;
-    font-size: 2rem;
-    font-weight: 200;
-    height: 3rem;
-    position: absolute;
 
-}
-.wordsToFlip span{
-    display: block;
-    height: 100%;
-    padding-left: 10px;
-    animation: spin_words 10s linear infinite;
-    animation-fill-mode: both; /* Keeps the final animation state */
-    position: relative;
-    bottom: 0;
+:root {
+  --fontSize: 40px;
+  --bigFontSize: 60px;
 }
 
+.carousel {
+  border: 5px solid blue;
+  display: flex;
+  align-items: flex-end;
+  height: 22%;
+  width: 45%;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
 
-@keyframes spin_words {
-  0%, 100% {
-      transform: translateY(0);
+.carousel .pre {
+  font-size: var(--bigFontSize);
+  margin-right: 10px;
+  line-height: var(--fontSize);
+  position: relative;
+  bottom: calc((var(--bigFontSize) - var(--fontSize)) / 2);
+}
+
+.engineerPlus {
+  font-size: var(--fontSize);
+  margin-right: 10px;
+  line-height: var(--fontSize);
+}
+
+.change_outer {
+  display: flex;
+  align-items: flex-end;
+  font-size: var(--fontSize);
+  overflow: hidden;
+  height: var(--fontSize);
+}
+
+.carousel .change_outer .change_inner {
+  position: relative;
+  animation: rotate 9s infinite;
+}
+
+.carousel .change_outer .change_inner .element {
+  height: var(--fontSize);
+  line-height: var(--fontSize);
+}
+
+@keyframes rotate {
+  0%, 16.66% {
+    transform: translateY(0);
   }
-  10%, 90% {
-      transform: translateY(-100%);
+  20%, 36.66% {
+    transform: translateY(calc(1 * var(--fontSize)));
   }
-  20%, 80% {
-      transform: translateY(-200%);
+  40%, 56.66% {
+    transform: translateY(calc(2 * var(--fontSize)));
   }
-  30%, 70% {
-      transform: translateY(-300%);
+  60%, 76.66% {
+    transform: translateY(calc(3 * var(--fontSize)));
   }
-  40%, 60% {
-      transform: translateY(-400%);
+  80%, 96.66% {
+    transform: translateY(calc(4 * var(--fontSize)));
   }
-  50% {
-      transform: translateY(-500%);
-  }
-  to {
-    transform: translateY(0); /* Move back to the initial position */
+  100% {
+    transform: translateY(calc(5 * var(--fontSize)));
   }
 }

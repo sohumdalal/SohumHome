@@ -1,29 +1,23 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 const Header = () => {
-
-  const words = ['craftsman', 'baker', 'chef', 'farmer', 'barista'];
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-
-
-return (
-  <div className="OuterTitle">
-    <div id="titleBox">
-      <h1 id="biggerTitle">Sohum Dalal. </h1>
-      <h2 id="smallerTitle">
-        engineer + 
-        <div className="wordsToFlip">
-          {words.map((word, index) => (
-            <span key={index} className={index === currentWordIndex ? 'visible' : 'hidden'}>
-              {word}
-            </span>
-          ))}
+  return (
+    <div className="carousel">
+      <div className="pre">Sohum Dalal.</div>
+      <div className="engineerPlus">engineer +</div>
+      <div className="change_outer">
+        <div className="change_inner">
+          <div className="element">craftsman</div>
+          <div className="element">chef</div>
+          <div className="element">baker</div>
+          <div className="element">barista</div>
+          <div className="element">farmer</div>
+          <div className="element">craftsman</div> {/* Repeat first element */}
         </div>
-      </h2>
+      </div>
     </div>
-  </div>
-);
+  );
 }
 
-export default Header
+export default Header;
