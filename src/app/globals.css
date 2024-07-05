@@ -42,52 +42,33 @@ h1 {
   width: 50%;
 }
 
-.bio {
+/* .bio {
   width: 60%;
   text-align: left;
   width: 100%; 
-  
-}
+} */
 
 .bio p {
   margin: 0 0 10px 0;
-  font-size: 1.5rem; /* Adjust as needed */
+  font-size: 1.5rem; 
 }
 
 .bio ul {
   list-style: none;
   padding: 0;
-  margin-top: 50px; /* Add margin top to list */
+  margin-top: 50px; 
 }
 
 .bio ul li {
   margin: 15px 0;
-  font-size: 1.3rem; /* Adjust as needed */
+  font-size: 1.3rem; 
 }
 
-.bio ul li a {
-  text-decoration: none;
-}
-
+.bio ul li a:link, 
 .bio ul li a:visited,
 .bio ul li a:hover,
 .bio ul li a:active {
   color: black;
 }
 
-
-.bio ul li a::after {
-  content: "";
-  position: absolute;
-  bottom: -2px; /* Position the underline */
-  left: 0;
-  width: 100%;
-  height: 2px; /* Underline height */
-  transform: scaleX(0); /* Initially scale to zero width */
-  transition: transform 0.3s ease; /* Add transition effect */
-}
-
-.bio ul li a:hover::after {
-  transform: scaleX(1); /* Scale to full width on hover */
-}
 
