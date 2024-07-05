@@ -93,32 +93,23 @@ margin-top: 20px;
   font-weight: 200;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .wordsToFlip{
     display: inline-block;
     overflow: hidden;
     font-size: 2rem;
     font-weight: 200;
-    height: 3rem; /* Set a fixed height to limit the visible area */
+    height: 3rem;
+    position: absolute;
+
 }
 .wordsToFlip span{
     display: block;
     height: 100%;
     padding-left: 10px;
-    animation: spin_words 6s infinite;
+    animation: spin_words 10s linear infinite;
     animation-fill-mode: both; /* Keeps the final animation state */
     position: relative;
-    top: 0;
+    bottom: 0;
 }
 
 
@@ -140,5 +131,8 @@ margin-top: 20px;
   }
   50% {
       transform: translateY(-500%);
+  }
+  to {
+    transform: translateY(0); /* Move back to the initial position */
   }
 }

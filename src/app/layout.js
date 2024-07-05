@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
 todo:
 
 do a dark mode
-add the shutter rotater
 fix media quries for mobile
 
 
