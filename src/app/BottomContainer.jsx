@@ -13,9 +13,9 @@ const BottomContainer = () => {
           <li><a href="https://github.com" target="_blank">GitHub↗</a></li>
           <li><a href="https://instagram.com" target="_blank">Instagram↗</a></li>
           <li><a href="https://twitter.com" target="_blank">X↗</a></li>
-          <li><a href="https://medium.com" target="_blank">Medium↗</a> (mainly technical work)</li>
-          <li><a href="https://substack.com" target="_blank">Substack↗</a> (mainly food & other thoughts)</li>
-          <li><a href="https://pinterest.com" target="_blank">Pinterest↗</a> (mainly aesthetics)</li>
+          <li><a href="https://medium.com" target="_blank">Medium↗</a> (technical work)</li>
+          <li><a href="https://substack.com" target="_blank">Substack↗</a> (other thoughts)</li>
+          <li><a href="https://pinterest.com" target="_blank">Pinterest↗</a></li>
         </ul>
       </div>
     </div>

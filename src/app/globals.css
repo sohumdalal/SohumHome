@@ -9,7 +9,7 @@ html, body {
 
 
 .OuterTitle{
-  /* border: 5px solid blue; */
+  border: 5px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -35,10 +35,11 @@ h1 {
 }
 
 .contentContainer {
+  border: 5px solid blue;
   margin-top: 50px; /* Add margin top to list */
   display: flex;
   height: 78%;
-  width: 60%;
+  width: 50%;
 }
 
 .bio {
