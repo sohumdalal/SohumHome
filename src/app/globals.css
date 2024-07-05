@@ -7,7 +7,7 @@ body {
 }
 
 .contentContainer {
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -68,7 +68,7 @@ body {
 }
 
 .carousel {
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   display: flex;
   align-items: flex-end;
   height: 22%;
