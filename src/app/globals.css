@@ -134,7 +134,7 @@ body {
 }
 
 /* Media Queries */
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 300px) and (max-width: 481px) {
   :root {
     --fontSize: 20px;
     --bigFontSize: 30px;
@@ -142,11 +142,12 @@ body {
   .contentContainer, .carousel {
     width: 80%;
   }
+
   .bio p { font-size: 1.1rem; }
   .bio ul li { font-size: 1rem; }
 }
 
-@media screen and (min-width: 769px) and (max-width: 864px) {
+@media screen  and (max-width: 864px) {
   :root {
     --fontSize: calc(18px + (28 - 18) * ((100vw - 769px) / (864 - 769))); /* Linear interpolation for font size */
     --bigFontSize: calc(28px + (36 - 28) * ((100vw - 769px) / (864 - 769))); /* Linear interpolation for big font size */
