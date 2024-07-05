@@ -20,6 +20,7 @@ todo:
 
 do a dark mode
 fix media quries for mobile
+fix vertical scroll
 
 
 */
