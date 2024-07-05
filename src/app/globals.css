@@ -1,24 +1,96 @@
+:root {
+  --fontSize: 18px;
+  --bigFontSize: 28px;
+  --backgroundColor: #E1D8D5; /* Define a consistent background color */
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   overflow: hidden;
+  background-color: var(--backgroundColor); /* Apply the background color */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 .contentContainer {
-  /* border: 5px solid blue; */
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   height: 78%;
-  width: 45%;
+  width: 90%;
   font-weight: 200;
+  margin-top: 40px;
+  font-size: calc(var(--fontSize) - 2px); /* Ensure content container text is smaller */
+}
+
+.carousel {
+  display: flex;
+  align-items: flex-end;
+  height: 22%;
+  width: 90%;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  background-color: var(--backgroundColor); /* Ensure carousel background matches */
+}
+
+.carousel .myName {
+  font-size: var(--bigFontSize);
+  margin-right: 10px;
+  line-height: var(--fontSize);
+  position: relative;
+  bottom: calc((var(--bigFontSize) - var(--fontSize)) / 2);
+}
+
+.subTitle {
+  display: flex;
+  align-items: flex-end;
+}
+
+.subTitle .engineerPlus {
+  font-size: var(--fontSize);
+  margin-right: 10px;
+  line-height: var(--fontSize);
+}
+
+.subTitle .change_outer {
+  display: flex;
+  align-items: flex-end;
+  font-size: var(--fontSize);
+  overflow: hidden;
+  height: var(--fontSize);
+}
+
+.subTitle .change_outer .change_inner {
+  position: relative;
+  animation: rotate 9s infinite;
+}
+
+.subTitle .change_outer .change_inner .element {
+  height: var(--fontSize);
+  line-height: var(--fontSize);
+}
+
+@keyframes rotate {
+  0%, 16.66% { transform: translateY(0); }
+  20%, 36.66% { transform: translateY(calc(1 * var(--fontSize))); }
+  40%, 56.66% { transform: translateY(calc(2 * var(--fontSize))); }
+  60%, 76.66% { transform: translateY(calc(3 * var(--fontSize))); }
+  80%, 96.66% { transform: translateY(calc(4 * var(--fontSize))); }
+  100% { transform: translateY(calc(5 * var(--fontSize))); }
 }
 
 .bio p {
   margin: 0 0 10px 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .bio ul {
@@ -29,7 +101,7 @@ body {
 
 .bio ul li {
   margin: 15px 0;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
 }
 
 .bio ul li a {
@@ -56,77 +128,93 @@ body {
 .colophon {
   text-align: center;
   margin-top: 100px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: gray;
   font-weight: 200;
 }
 
+/* Media Queries */
 
-:root {
-  --fontSize: 40px;
-  --bigFontSize: 60px;
-}
-
-.carousel {
-  /* border: 5px solid blue; */
-  display: flex;
-  align-items: flex-end;
-  height: 22%;
-  width: 45%;
-  font-weight: 300;
-  letter-spacing: 2px;
-  padding-bottom: 10px;
-}
-
-.carousel .pre {
-  font-size: var(--bigFontSize);
-  margin-right: 10px;
-  line-height: var(--fontSize);
-  position: relative;
-  bottom: calc((var(--bigFontSize) - var(--fontSize)) / 2);
-}
-
-.engineerPlus {
-  font-size: var(--fontSize);
-  margin-right: 10px;
-  line-height: var(--fontSize);
-}
-
-.change_outer {
-  display: flex;
-  align-items: flex-end;
-  font-size: var(--fontSize);
-  overflow: hidden;
-  height: var(--fontSize);
-}
-
-.carousel .change_outer .change_inner {
-  position: relative;
-  animation: rotate 9s infinite;
-}
-
-.carousel .change_outer .change_inner .element {
-  height: var(--fontSize);
-  line-height: var(--fontSize);
-}
-
-@keyframes rotate {
-  0%, 16.66% {
-    transform: translateY(0);
+@media screen and (min-width: 481px) {
+  :root {
+    --fontSize: 20px;
+    --bigFontSize: 30px;
   }
-  20%, 36.66% {
-    transform: translateY(calc(1 * var(--fontSize)));
+  .contentContainer, .carousel {
+    width: 80%;
   }
-  40%, 56.66% {
-    transform: translateY(calc(2 * var(--fontSize)));
+  .bio p { font-size: 1.1rem; }
+  .bio ul li { font-size: 1rem; }
+}
+
+@media screen and (min-width: 769px) {
+  :root {
+    --fontSize: 24px;
+    --bigFontSize: 36px;
   }
-  60%, 76.66% {
-    transform: translateY(calc(3 * var(--fontSize)));
+  .contentContainer, .carousel {
+    width: 60%;
   }
-  80%, 96.66% {
-    transform: translateY(calc(4 * var(--fontSize)));
+  .bio p { font-size: 1.2rem; }
+  .bio ul li { font-size: 1.1rem; }
+}
+
+@media screen and (min-width: 1025px) {
+  :root {
+    --fontSize: 28px;
+    --bigFontSize: 42px;
   }
-  100% {
-    transform: translateY(calc(5 * var(--fontSize)));
+  .contentContainer, .carousel {
+    width: 50%;
+  }
+  .bio p { font-size: 1.3rem; }
+  .bio ul li { font-size: 1.2rem; }
+  .colophon { font-size: 1rem; }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --fontSize: 16px;
+    --bigFontSize: 24px;
+  }
+  body {
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .contentContainer {
+    height: auto;
+    margin-top: 20px;
+    font-size: calc(var(--fontSize) - 2px); /* Ensure content container text is smaller */
+  }
+  .carousel {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    margin-bottom: 20px;
+    font-size: var(--bigFontSize); /* Keep carousel text larger */
+  }
+  .carousel .myName, .subTitle .engineerPlus, .subTitle .change_outer {
+    font-size: var(--fontSize);
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --fontSize: 14px;
+    --bigFontSize: 20px;
+  }
+  .contentContainer {
+    font-size: calc(var(--fontSize) - 2px); /* Ensure content container text is smaller */
+  }
+  .carousel {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: var(--bigFontSize); /* Keep carousel text larger */
+  }
+  .carousel .myName, .subTitle .engineerPlus, .subTitle .change_outer {
+    font-size: var(--fontSize);
+    margin-bottom: 5px;
   }
 }
