@@ -16,8 +16,11 @@ export default function RootLayout({ children }) {
 
 
 /* 
-todo: make links black, and underlined
+todo:
+
 do a dark mode
+
+
 add spacing throughout + kearning
 add the shutter rotater
 acctually add my links

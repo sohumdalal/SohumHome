@@ -64,6 +64,16 @@ h1 {
   font-size: 1.3rem; 
 }
 
+.bio ul li a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.bio ul li a span {
+  text-decoration: underline; /* Underline only the text within the span */
+}
+
 .bio ul li a:link, 
 .bio ul li a:visited,
 .bio ul li a:hover,
