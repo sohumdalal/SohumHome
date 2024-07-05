@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BottomContainer = () => {
+const ContentContainer = () => {
   return (
     <div className="contentContainer">
       <div className="bio">
@@ -18,9 +18,12 @@ const BottomContainer = () => {
           <li><a href="https://www.pinterest.com/dsohum/" target="_blank"><span>Pinterest</span>↗</a></li>
         </ul>
       </div>
+      <div class="colophon">
+        <p>Created by Sohum Dalal with Next.js. 2024</p>
+      </div>
     </div>
   )
 }
 
-export default BottomContainer
+export default ContentContainer
 

@@ -16,7 +16,6 @@ html, body {
   align-items: flex-start; 
   height: 22%;
   width: 60%;
-  
 }
 
 #titleBox {
@@ -38,8 +37,9 @@ h1 {
   border: 5px solid blue;
   margin-top: 50px;
   display: flex;
+  flex-direction: column;
   height: 78%;
-  width: 50%;
+  width: 60%;
 }
 
 /* .bio {
@@ -81,4 +81,9 @@ h1 {
   color: black;
 }
 
-
+.colophon {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1rem;
+  color: gray;
+}

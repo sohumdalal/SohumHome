@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import Header from "./Header";
-import BottomContainer from "./BottomContainer";
+import BottomContainer from "./ContentContainer";
 
 
 export default function Home() {
