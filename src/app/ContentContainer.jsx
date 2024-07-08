@@ -32,7 +32,7 @@ import React from 'react'
 
 const ContentContainer = () => {
   return (
-    <div className="flex flex-col h-[78%] w-[50%] mt-10 text-[calc(18px-2px)] font-light">
+    <div className="flex flex-col h-[78%] w-[50%] text-[calc(18px-2px)] mt-10 font-light">
       <div className="bio">
         <p id="helloBlurb">Hello! Thanks for stopping by.</p>
         <p id="infoParagraph" className="mt-5">

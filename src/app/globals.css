@@ -27,9 +27,9 @@ body {
 
 @keyframes rotate {
   0%, 16.66% { transform: translateY(0); }
-  20%, 36.66% { transform: translateY(calc(1 * var(--fontSize))); }
-  40%, 56.66% { transform: translateY(calc(2 * var(--fontSize))); }
-  60%, 76.66% { transform: translateY(calc(3 * var(--fontSize))); }
-  80%, 96.66% { transform: translateY(calc(4 * var(--fontSize))); }
-  100% { transform: translateY(calc(5 * var(--fontSize))); }
+  20%, 36.66% { transform: translateY(-24px); }
+  40%, 56.66% { transform: translateY(-48px); }
+  60%, 76.66% { transform: translateY(-72px); }
+  80%, 96.66% { transform: translateY(-96px); }
+  100% { transform: translateY(-120px); }
 }
