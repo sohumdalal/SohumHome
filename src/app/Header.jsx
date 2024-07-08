@@ -31,10 +31,10 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div className="flex items-end h-[22%] w-[90%] font-light tracking-wider pb-2.5 bg-[#E1D8D5]">
-      <div className="text-[28px] mr-2.5 relative bottom-[calc((28px-18px)/2)]">Sohum Dalal.</div>
+    <div className="flex items-end h-[22%] w-[50%] font-light tracking-wider pb-2.5 bg-[#E1D8D5]">
+      <div className="text-[48px] mr-2.5 relative bottom-[calc((28px-18px)/2)]">Sohum Dalal.</div>
       <div className="flex items-end">
-        <div className="text-[18px] mr-2.5">engineer +</div>
+        <div className="text-[24px] mr-2.5">engineer +</div>
         <div className="flex items-end text-[18px] overflow-hidden h-[18px]">
           <div className="relative animate-rotate">
             <div className="h-[18px] leading-[18px]">craftsman</div>
