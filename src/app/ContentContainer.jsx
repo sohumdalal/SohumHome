@@ -19,7 +19,7 @@ const ContentContainer = () => {
         </ul>
       </div>
       <div className="text-top mt-20 text-[0.8rem] text-gray-500 font-light">
-        <p>Created by Sohum Dalal with Next.js. 2025</p>
+        <p>Created by Sohum Dalal with Next.js. 2024</p>
       </div>
     </div>
   );
