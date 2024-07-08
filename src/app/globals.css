@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 :root {
   --fontSize: 18px;
   --bigFontSize: 28px;
