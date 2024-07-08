@@ -18,7 +18,6 @@ export default function RootLayout({ children }) {
 /* 
 todo:
 
-migrate to tailwind!!!! for media queries
 do a dark mode
 
 
