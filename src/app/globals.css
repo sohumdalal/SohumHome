@@ -33,3 +33,9 @@ body {
   80%, 96.66% { transform: translateY(-96px); }
   100% { transform: translateY(-120px); }
 }
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+}
+
