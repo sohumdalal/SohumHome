@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import { GoArrowUpRight } from "react-icons/go";
-import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 
 const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
@@ -14,7 +13,21 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
       transition: {
         duration: 0.5,
         ease: "easeInOut",
-        staggerChildren: 0.1 // Stagger the children to fade in one by one
+        staggerChildren: 0.1,
+        delayChildren: 0.3 // Delay the start of children animations
+      }
+    }
+  };
+
+  const footerVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+        delay: 1 // Adjust this delay to make sure it's after the list animation
       }
     }
   };
@@ -57,11 +70,26 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
           </div>
         </motion.div>
       </AnimatePresence>
-      <button onClick={toggleDarkMode} className="mt-5 text-[12px] dark:text-white">
-        Toggle {isDarkMode ? 'Light' : 'Dark'} Mode
-      </button>
-      <motion.div className="text-top mt-20 text-[0.8rem] text-gray-500 font-light" initial="hidden" animate="visible" variants={fadeInVariants}>
-        <p>Created by Sohum Dalal with Next.js. 2024</p>
+      
+      {/* Footer div containing Toggle Dark Mode and Colophon */}
+      <motion.div 
+        className="flex justify-between items-center mt-10"
+        initial="hidden" 
+        animate="visible" 
+        variants={footerVariants}
+      >
+        {/* Colophon */}
+        <div className="text-[0.8rem] text-gray-500 font-light">
+          <p>Created by Sohum Dalal with Next.js. 2024</p>
+        </div>
+
+        {/* Toggle Dark Mode button */}
+        <button 
+          onClick={toggleDarkMode} 
+          className="text-[12px] text-dynamic-color"
+        >
+          Toggle {isDarkMode ? 'Light' : 'Dark'} Mode
+        </button>
       </motion.div>
     </div>
   );

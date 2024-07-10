@@ -18,7 +18,6 @@ export default function RootLayout({ children }) {
 /* 
 todo:
 
-do a dark mode
 margin bottom on the colophon
 send to bianca for edits
 
