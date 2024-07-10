@@ -4,7 +4,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 
-const ContentContainer = ({ toggleDarkMode }) => {
+const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
 
   const fadeInVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -20,7 +20,7 @@ const ContentContainer = ({ toggleDarkMode }) => {
   };
 
   return (
-    <div className="flex flex-col h-[78%] w-[70%] text-[calc(18px-2px)] mt-5 font-light sm:w-[50%] sm:mt-10">
+    <div className="flex flex-col h-[78%] w-[70%] text-[calc(18px-2px)] mt-5 font-light sm:w-[50%] sm:mt-10 text-dynamic-color">
       <AnimatePresence>
         <motion.div
           initial="hidden"
@@ -33,7 +33,7 @@ const ContentContainer = ({ toggleDarkMode }) => {
               Hello! Thanks for stopping by.
             </motion.p>
             <motion.p id="infoParagraph" className="mt-5" variants={fadeInVariants}>
-              I'm Sohum. I'm a software engineer and craftsman. I appreciate technology systems that are well-organized, functional first, and modular. Outside of a development environment, you can find me applying the same principles to other pursuits, namely baking bread. You can learn more about me and my work at the links below, or you can email me <a href="mailto:dsohum@gmail.com" target="_blank" className="email-link text-black no-underline relative hover:underline">here <GoArrowUpRight /></a>
+              I'm Sohum. I'm a software engineer and craftsman. I appreciate technology systems that are well-organized, functional first, and modular. Outside of a development environment, you can find me applying the same principles to other pursuits, namely baking bread. You can learn more about me and my work at the links below, or you can email me <a href="mailto:dsohum@gmail.com" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here <GoArrowUpRight /></a>
             </motion.p>
 
             <motion.ul className="list-none mt-10 p-0" variants={fadeInVariants}>
@@ -47,7 +47,7 @@ const ContentContainer = ({ toggleDarkMode }) => {
                 { href: "https://www.pinterest.com/dsohum/", label: "Pinterest" }
               ].map((link, index) => (
                 <motion.li key={index} className="mt-4 text-[0.9rem]" variants={fadeInVariants}>
-                  <a href={link.href} target="_blank" className="flex items-center text-black no-underline relative hover:underline">
+                  <a href={link.href} target="_blank" className="flex items-center text-dynamic-color no-underline relative hover:underline">
                     <span>{link.label} {link.description && <span>{link.description}</span>}</span>
                     <GoArrowUpRight />
                   </a>
@@ -57,8 +57,8 @@ const ContentContainer = ({ toggleDarkMode }) => {
           </div>
         </motion.div>
       </AnimatePresence>
-      <button onClick={toggleDarkMode} className="mt-5">
-        Toggle Dark Mode
+      <button onClick={toggleDarkMode} className="mt-5 text-[12px] dark:text-white">
+        Toggle {isDarkMode ? 'Light' : 'Dark'} Mode
       </button>
       <motion.div className="text-top mt-20 text-[0.8rem] text-gray-500 font-light" initial="hidden" animate="visible" variants={fadeInVariants}>
         <p>Created by Sohum Dalal with Next.js. 2024</p>

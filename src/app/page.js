@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Header  />
-      <ContentContainer toggleDarkMode={toggleDarkMode}/>
+      <ContentContainer toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
     </main>
   );
 }

@@ -8,12 +8,12 @@
   --fontSize: 18px;
   --bigFontSize: 28px;
   --backgroundColor: #E1D8D5; /* Light mode background color */
-  --textColor: #000000; /* Light mode text color */
+  --textColor: #282727; /* Light mode text color */
 }
 
 body.dark-mode {
-  --backgroundColor: #1A202C; /* Dark mode background color */
-  --textColor: #FFFFFF; /* Dark mode text color */
+  --backgroundColor: #282727; /* Dark mode background color */
+  --textColor: #E1D8D5; /* Dark mode text color */
 }
 
 html,
@@ -23,6 +23,7 @@ body {
   height: 100%;
   overflow: auto; /* Enable vertical scrolling */
   background-color: var(--backgroundColor); /* Apply the background color */
+  color: var(--textColor);
 }
 
 
@@ -38,4 +39,8 @@ body {
 .email-link {
   display: inline-flex;
   align-items: center;
+}
+
+.text-dynamic-color {
+  color: var(--textColor);
 }
