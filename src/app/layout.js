@@ -19,10 +19,7 @@ export default function RootLayout({ children }) {
 todo:
 
 do a dark mode
-fix arrows on mobile
 margin bottom on the colophon
-clean ALL Links
 send to bianca for edits
-
 
 */

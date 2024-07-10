@@ -1,6 +1,5 @@
-
 .main {
-  background-color: #E1D8D5;
+  color: var(--textColor);
   height: 100vh;
   width: 100vw;
   box-sizing: border-box; 

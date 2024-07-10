@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* globals.css */
+
 :root {
   --fontSize: 18px;
   --bigFontSize: 28px;
-  --backgroundColor: #E1D8D5; /* Define a consistent background color */
+  --backgroundColor: #E1D8D5; /* Light mode background color */
+  --textColor: #000000; /* Light mode text color */
+}
+
+body.dark-mode {
+  --backgroundColor: #1A202C; /* Dark mode background color */
+  --textColor: #FFFFFF; /* Dark mode text color */
 }
 
 html,
@@ -17,13 +25,6 @@ body {
   background-color: var(--backgroundColor); /* Apply the background color */
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
-}
 
 @keyframes rotate {
   0%, 16.66% { transform: translateY(0); }
@@ -38,4 +39,3 @@ body {
   display: inline-flex;
   align-items: center;
 }
-
