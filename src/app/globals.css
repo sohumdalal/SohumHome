@@ -44,3 +44,11 @@ body {
 .text-dynamic-color {
   color: var(--textColor);
 }
+
+.border-light {
+  border-color: var(--textColor); /* Light mode border color */
+}
+
+.border-dark {
+  border-color: var(--backgroundColor); /* Dark mode border color */
+}

@@ -14,7 +14,7 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
         duration: 0.5,
         ease: "easeInOut",
         staggerChildren: 0.1,
-        delayChildren: 0.3 // Delay the start of children animations
+        delayChildren: 0.3
       }
     }
   };
@@ -27,7 +27,7 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
       transition: {
         duration: 0.5,
         ease: "easeInOut",
-        delay: 1 // Adjust this delay to make sure it's after the list animation
+        delay: 1
       }
     }
   };
@@ -70,12 +70,12 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
           </div>
         </motion.div>
       </AnimatePresence>
-      
+
       {/* Footer div containing Toggle Dark Mode and Colophon */}
-      <motion.div 
-        className="flex justify-between items-center mt-10"
-        initial="hidden" 
-        animate="visible" 
+      <motion.div
+        className="flex justify-between items-center mt-10 mb-8"
+        initial="hidden"
+        animate="visible"
         variants={footerVariants}
       >
         {/* Colophon */}
@@ -84,12 +84,13 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
         </div>
 
         {/* Toggle Dark Mode button */}
-        <button 
-          onClick={toggleDarkMode} 
-          className="text-[12px] text-dynamic-color"
+        <button
+          onClick={toggleDarkMode}
+          className={`text-[12px] px-2 py-1 border ${isDarkMode ? 'border-[#E1D8D5]' : 'border-[#282727]'}`}
         >
-          Toggle {isDarkMode ? 'Light' : 'Dark'} Mode
+          {isDarkMode ? 'Light' : 'Dark'}
         </button>
+
       </motion.div>
     </div>
   );
