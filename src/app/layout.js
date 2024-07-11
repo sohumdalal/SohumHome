@@ -17,8 +17,5 @@ export default function RootLayout({ children }) {
 
 /* 
 todo:
-
-margin bottom on the colophon
 send to bianca for edits
-
 */

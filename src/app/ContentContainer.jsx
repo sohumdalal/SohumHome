@@ -73,24 +73,28 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
 
       {/* Footer div containing Toggle Dark Mode and Colophon */}
       <motion.div
-        className="flex justify-between items-center mt-10 mb-8"
+        className="flex flex-wrap justify-between items-center mt-10"
         initial="hidden"
         animate="visible"
         variants={footerVariants}
       >
         {/* Colophon */}
-        <div className="text-[0.8rem] text-gray-500 font-light">
+        <div className="w-1/2 text-[0.8rem] text-gray-500 font-light">
           <p>Created by Sohum Dalal with Next.js. 2024</p>
         </div>
 
         {/* Toggle Dark Mode button */}
-        <button
+        <div
           onClick={toggleDarkMode}
-          className={`text-[12px] px-2 py-1 border ${isDarkMode ? 'border-[#E1D8D5]' : 'border-[#282727]'}`}
+          className="flex justify-end w-1/2 text-[12px] px-2 py-1 border border-transparent"
         >
-          {isDarkMode ? 'Light' : 'Dark'}
-        </button>
+          <button className={`${isDarkMode ? 'border-[#E1D8D5]' : 'border-[#282727]'} inline-block border p-1`}>
+            {isDarkMode ? 'Light' : 'Dark'}
+          </button>
+        </div>
 
+        {/* Third div */}
+        <div className="w-full mb-10 h-[20%]"></div>
       </motion.div>
     </div>
   );
