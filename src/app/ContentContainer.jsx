@@ -19,6 +19,19 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
     }
   };
 
+  const listVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+        delay: 0.5  // Adjust the delay as needed
+      }
+    }
+  };
+
   const footerVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -27,7 +40,7 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
       transition: {
         duration: 0.5,
         ease: "easeInOut",
-        delay: 1
+        delay: 0.5
       }
     }
   };
@@ -49,24 +62,31 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
               I'm Sohum. I'm a software engineer and craftsman. I appreciate technology systems that are well-organized, functional first, and modular. Outside of a development environment, you can find me applying the same principles to other pursuits, namely baking bread. You can learn more about me and my work at the links below, or you can email me <a href="mailto:dsohum@gmail.com" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here <GoArrowUpRight /></a>
             </motion.p>
 
-            <motion.ul className="list-none mt-10 p-0" variants={fadeInVariants}>
-              {[
-                { href: "https://www.linkedin.com/in/sohum-dalal-985076a6/", label: "LinkedIn" },
-                { href: "https://github.com/sohumdalal", label: "GitHub" },
-                { href: "https://www.instagram.com/sohumdalal/", label: "Instagram" },
-                { href: "https://twitter.com/SohumDalal", label: "X" },
-                { href: "https://medium.com/@sohumdalal", label: "Medium", description: "(technical work)" },
-                { href: "https://substack.com/@sohumdalal", label: "Substack", description: "(other thoughts)" },
-                { href: "https://www.pinterest.com/dsohum/", label: "Pinterest" }
-              ].map((link, index) => (
-                <motion.li key={index} className="mt-4 text-[0.9rem]" variants={fadeInVariants}>
-                  <a href={link.href} target="_blank" className="flex items-center text-dynamic-color no-underline relative hover:underline">
-                    <span>{link.label} {link.description && <span>{link.description}</span>}</span>
-                    <GoArrowUpRight />
-                  </a>
-                </motion.li>
-              ))}
-            </motion.ul>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={listVariants}
+              exit="hidden"
+            >
+              <ul className="list-none mt-10 p-0">
+                {[
+                  { href: "https://www.linkedin.com/in/sohum-dalal-985076a6/", label: "LinkedIn" },
+                  { href: "https://github.com/sohumdalal", label: "GitHub" },
+                  { href: "https://www.instagram.com/sohumdalal/", label: "Instagram" },
+                  { href: "https://twitter.com/SohumDalal", label: "X" },
+                  { href: "https://medium.com/@sohumdalal", label: "Medium", description: "(technical work)" },
+                  { href: "https://substack.com/@sohumdalal", label: "Substack", description: "(other thoughts)" },
+                  { href: "https://www.pinterest.com/dsohum/", label: "Pinterest" }
+                ].map((link, index) => (
+                  <li key={index} className="mt-4 text-[0.9rem]">
+                    <a href={link.href} target="_blank" className="flex items-center text-dynamic-color no-underline relative hover:underline">
+                      <span>{link.label} {link.description && <span>{link.description}</span>}</span>
+                      <GoArrowUpRight />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           </div>
         </motion.div>
       </AnimatePresence>
@@ -86,7 +106,7 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
         {/* Toggle Dark Mode button */}
         <div
           onClick={toggleDarkMode}
-          className="flex justify-end w-1/2 text-[12px] px-2 py-1 border border-transparent"
+          className="flex w-1/2 text-[12px] px-2 py-1 border border-transparent justify-end"
         >
           <button className={`${isDarkMode ? 'border-[#E1D8D5]' : 'border-[#282727]'} inline-block border p-1`}>
             {isDarkMode ? 'Light' : 'Dark'}
