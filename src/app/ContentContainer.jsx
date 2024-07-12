@@ -14,7 +14,7 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
         duration: 0.5,
         ease: "easeInOut",
         staggerChildren: 0.1,
-        delayChildren: 0.3
+        delayChildren: 0.7
       }
     }
   };
@@ -27,7 +27,7 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
       transition: {
         duration: 0.5,
         ease: "easeInOut",
-        delay: 0.5  // Adjust the delay as needed
+        delay: 0.7  // Adjust the delay as needed
       }
     }
   };
@@ -40,7 +40,7 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
       transition: {
         duration: 0.5,
         ease: "easeInOut",
-        delay: 0.5
+        delay: 0.7
       }
     }
   };
