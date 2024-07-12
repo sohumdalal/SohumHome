@@ -21,7 +21,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: auto; /* Enable vertical scrolling */
+  overflow: hidden; /* Enable vertical scrolling */
   background-color: var(--backgroundColor); /* Apply the background color */
   color: var(--textColor);
 }
