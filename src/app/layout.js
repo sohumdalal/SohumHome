@@ -9,7 +9,9 @@ const manrope = Manrope({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={manrope.className}>{children}</body>
+      <body className={`${manrope.className} overflow-auto sm:overflow-hidden min-h-screen`}>
+        {children}
+      </body>
     </html>
   );
 }
@@ -19,3 +21,4 @@ export default function RootLayout({ children }) {
 todo:
 send to bianca for edits
 */
+
