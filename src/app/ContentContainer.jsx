@@ -59,7 +59,8 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
               Hello! Thanks for stopping by.
             </motion.p>
             <motion.p id="infoParagraph" className="mt-5" variants={fadeInVariants}>
-              I'm Sohum. I'm a software engineer and craftsman. I appreciate technology systems that are well-organized, functional first, and modular. Outside of a development environment, you can find me applying the same principles to other pursuits, namely baking bread. You can learn more about me and my work at the links below, or you can email me <a href="mailto:dsohum@gmail.com" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here <GoArrowUpRight /></a>
+              I'm Sohum. I'm a software engineer and craftsman. I appreciate technology systems that are well-organized, functional first, and modular. Outside of a development environment, you can find me applying the same principles to other pursuits, namely baking bread. You can learn more about me and my work at the links below, or you can email me <a href="mailto:dsohum@gmail.com" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here<GoArrowUpRight /></a>. 
+              If you prefer a conversation, you can book some time <a href="https://calendly.com/dsohum" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here <GoArrowUpRight /></a>.
             </motion.p>
 
             <motion.div
