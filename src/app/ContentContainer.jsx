@@ -102,14 +102,14 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
         </div>
 
         {/* Toggle Dark Mode button */}
-        <div
+        {/* <div
           onClick={toggleDarkMode}
           className="flex w-1/2 text-[12px] px-2 py-1 border border-transparent justify-end"
         >
           <button className={`${isDarkMode ? 'border-[#E1D8D5]' : 'border-[#282727]'} inline-block border p-1`}>
             {isDarkMode ? 'Light' : 'Dark'}
           </button>
-        </div>
+        </div> */}
 
         {/* Third div */}
         <div className="w-full mb-10 h-[20%]"></div>
