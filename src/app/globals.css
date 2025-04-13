@@ -7,13 +7,13 @@
 :root {
   --fontSize: 18px;
   --bigFontSize: 28px;
-  --backgroundColor: #E1D8D5; /* Light mode background color */
+  --backgroundColor: #F7F4F2; /* Light mode background color */
   --textColor: #282727; /* Light mode text color */
 }
 
 body.dark-mode {
   --backgroundColor: #282727; /* Dark mode background color */
-  --textColor: #E1D8D5; /* Dark mode text color */
+  --textColor: #FCFAED; /* Dark mode text color */
 }
 
 html,
