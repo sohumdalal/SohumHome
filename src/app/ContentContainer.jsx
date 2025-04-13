@@ -98,7 +98,7 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
       >
         {/* Colophon */}
         <div className="w-1/2 text-[0.8rem] text-gray-500 font-light">
-          <p>Created by Sohum Dalal with Next.js. 2024</p>
+          <p>Created by Sohum Dalal with Next.js. 2025</p>
         </div>
 
         {/* Toggle Dark Mode button */}
