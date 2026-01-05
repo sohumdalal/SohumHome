@@ -59,8 +59,8 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
               Thanks for stopping by.
             </motion.p>
             <motion.p id="infoParagraph" className="mt-5" variants={fadeInVariants}>
-              I’m a software engineer passionate about craftsmanship.
-              Outside of engineering, you’ll find me baking bread or practicing yoga. You can learn more about me and my work at the links below, or you can email me <a href="mailto:dsohum@gmail.com" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here<GoArrowUpRight /></a>.
+              I'm a software engineer and educator, passionate about the craftsmanship of dependable software. Currently, I'm building the <a href="https://learning.postman.com/docs/collaborating-in-postman/public-api-network/public-api-network-overview/" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">API Network<GoArrowUpRight /></a> @ Postman.
+              Outside of engineering, you'll find me baking bread or practicing yoga. You can learn more about me and my work at the links below, or you can email me <a href="mailto:dsohum@gmail.com" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here<GoArrowUpRight /></a>.
               If you prefer a conversation, you can book some time <a href="https://calendly.com/dsohum" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here <GoArrowUpRight /></a>.
             </motion.p>
 
