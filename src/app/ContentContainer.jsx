@@ -56,11 +56,11 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
         >
           <div className="bio">
             <motion.p id="helloBlurb" variants={fadeInVariants}>
-              Thanks for stopping by!
+              Thanks for stopping by.
             </motion.p>
             <motion.p id="infoParagraph" className="mt-5" variants={fadeInVariants}>
-              I’m a software engineer and educator, passionate about building dependable systems and fostering a culture of craftsmanship.
-              Outside of engineering, you’ll usually find me baking bread or climbing rocks—mostly the indoor kind. You can learn more about me and my work at the links below, or you can email me <a href="mailto:dsohum@gmail.com" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here<GoArrowUpRight /></a>.
+              I’m a software engineer passionate about craftsmanship.
+              Outside of engineering, you’ll find me baking bread or practicing yoga. You can learn more about me and my work at the links below, or you can email me <a href="mailto:dsohum@gmail.com" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here<GoArrowUpRight /></a>.
               If you prefer a conversation, you can book some time <a href="https://calendly.com/dsohum" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here <GoArrowUpRight /></a>.
             </motion.p>
 
@@ -99,7 +99,7 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
       >
         {/* Colophon */}
         <div className="w-1/2 text-[0.8rem] text-gray-500 font-light">
-          <p>Created by Sohum Dalal with Next.js. 2025</p>
+          <p>Created by Sohum Dalal with Next.js. 2026</p>
         </div>
 
         {/* Toggle Dark Mode button */}
