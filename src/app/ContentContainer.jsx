@@ -13,7 +13,7 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
       transition: {
         duration: 0.5,
         ease: "easeInOut",
-        staggerChildren: 0.1,
+        staggerChildren: 0.0,
         delayChildren: 0.7
       }
     }
@@ -46,7 +46,7 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
   };
 
   return (
-    <div className="flex flex-col h-[78%] w-[70%] text-[calc(18px-2px)] mt-5 font-light sm:w-[50%] sm:mt-10 text-dynamic-color">
+    <div className="flex flex-col h-[190%] w-[70%] text-[calc(18px-2px)] mt-5 font-light sm:w-[50%] sm:mt-10 text-dynamic-color">
       <AnimatePresence>
         <motion.div
           initial="hidden"
@@ -56,10 +56,12 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
         >
           <div className="bio">
             <motion.p id="helloBlurb" variants={fadeInVariants}>
-              Hello! Thanks for stopping by.
+              Thanks for stopping by.
             </motion.p>
             <motion.p id="infoParagraph" className="mt-5" variants={fadeInVariants}>
-              I'm Sohum. I'm a software engineer and craftsman. I appreciate technology systems that are well-organized, functional first, and modular. Outside of a development environment, you can find me applying the same principles to other pursuits, namely baking bread. You can learn more about me and my work at the links below, or you can email me <a href="mailto:dsohum@gmail.com" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here <GoArrowUpRight /></a>
+              I’m a software engineer passionate about craftsmanship.
+              Outside of engineering, you’ll find me baking bread or practicing yoga. You can learn more about me and my work at the links below, or you can email me <a href="mailto:dsohum@gmail.com" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here<GoArrowUpRight /></a>.
+              If you prefer a conversation, you can book some time <a href="https://calendly.com/dsohum" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here <GoArrowUpRight /></a>.
             </motion.p>
 
             <motion.div
@@ -72,11 +74,8 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
                 {[
                   { href: "https://www.linkedin.com/in/sohum-dalal-985076a6/", label: "LinkedIn" },
                   { href: "https://github.com/sohumdalal", label: "GitHub" },
-                  { href: "https://www.instagram.com/sohumdalal/", label: "Instagram" },
-                  { href: "https://twitter.com/SohumDalal", label: "X" },
                   { href: "https://medium.com/@sohumdalal", label: "Medium", description: "(technical work)" },
                   { href: "https://substack.com/@sohumdalal", label: "Substack", description: "(other thoughts)" },
-                  { href: "https://www.pinterest.com/dsohum/", label: "Pinterest" }
                 ].map((link, index) => (
                   <li key={index} className="mt-4 text-[0.9rem]">
                     <a href={link.href} target="_blank" className="flex items-center text-dynamic-color no-underline relative hover:underline">
@@ -100,18 +99,18 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
       >
         {/* Colophon */}
         <div className="w-1/2 text-[0.8rem] text-gray-500 font-light">
-          <p>Created by Sohum Dalal with Next.js. 2024</p>
+          <p>Created by Sohum Dalal with Next.js. 2026</p>
         </div>
 
         {/* Toggle Dark Mode button */}
-        <div
+        {/* <div
           onClick={toggleDarkMode}
           className="flex w-1/2 text-[12px] px-2 py-1 border border-transparent justify-end"
         >
           <button className={`${isDarkMode ? 'border-[#E1D8D5]' : 'border-[#282727]'} inline-block border p-1`}>
             {isDarkMode ? 'Light' : 'Dark'}
           </button>
-        </div>
+        </div> */}
 
         {/* Third div */}
         <div className="w-full mb-10 h-[20%]"></div>
