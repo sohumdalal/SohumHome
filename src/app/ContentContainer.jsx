@@ -59,8 +59,9 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
               Thanks for stopping by.
             </motion.p>
             <motion.p id="infoParagraph" className="mt-5" variants={fadeInVariants}>
-              I'm a software engineer and educator, passionate about the craftsmanship of dependable software. Currently, I'm building the <a href="https://learning.postman.com/docs/collaborating-in-postman/public-api-network/public-api-network-overview/" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">API Network<GoArrowUpRight /></a> @ Postman.
-              <br />
+              I'm a software engineer and educator, passionate about the craftsmanship of dependable software. Currently building the <a href="https://learning.postman.com/docs/collaborating-in-postman/public-api-network/public-api-network-overview/" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">API Network<GoArrowUpRight /></a> @ Postman.
+            </motion.p>
+            <motion.p className="mt-5" variants={fadeInVariants}>
               You can learn more about me and my work at the links below, or you can email me <a href="mailto:dsohum@gmail.com" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here<GoArrowUpRight /></a>.
               If you prefer a conversation, you can book some time <a href="https://calendly.com/dsohum" target="_blank" className="email-link text-dynamic-color no-underline relative hover:underline">here <GoArrowUpRight /></a>.
             </motion.p>
@@ -70,8 +71,9 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
               animate="visible"
               variants={listVariants}
               exit="hidden"
+              className="mt-5"
             >
-              <ul className="list-none mt-10 p-0">
+              <ul>
                 {[
                   { href: "https://www.linkedin.com/in/sohum-dalal-985076a6/", label: "LinkedIn" },
                   { href: "https://github.com/sohumdalal", label: "GitHub" },
@@ -103,15 +105,7 @@ const ContentContainer = ({ toggleDarkMode, isDarkMode }) => {
           <p>Created by Sohum Dalal with Next.js. 2026</p>
         </div>
 
-        {/* Toggle Dark Mode button */}
-        {/* <div
-          onClick={toggleDarkMode}
-          className="flex w-1/2 text-[12px] px-2 py-1 border border-transparent justify-end"
-        >
-          <button className={`${isDarkMode ? 'border-[#E1D8D5]' : 'border-[#282727]'} inline-block border p-1`}>
-            {isDarkMode ? 'Light' : 'Dark'}
-          </button>
-        </div> */}
+
 
         {/* Third div */}
         <div className="w-full mb-10 h-[20%]"></div>

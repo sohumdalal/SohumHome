@@ -7,8 +7,8 @@
 :root {
   --fontSize: 18px;
   --bigFontSize: 28px;
-  --backgroundColor: #F7F4F2; /* Light mode background color */
-  --textColor: #282727; /* Light mode text color */
+  --backgroundColor: #F1F3E0; /* Light mode background color */
+  --textColor: #313647; /* Light mode text color */
 }
 
 body.dark-mode {
